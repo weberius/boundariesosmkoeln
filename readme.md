@@ -65,4 +65,4 @@ Dabei steht der admin_level für folgende Aufteilung in Deutschland:
 
 Die Abfragen gegen die Datenbank sind recht zeitaufwändig. Z.B. benötigt bei mir die Abfrage auf die Stadtteile in Köln ca 10 Minuten. Um die Zeit abzukürzen, sind dieser Webanwendung bereits berechnete GeoJson Strings hinterlegt, die im Normalfall ausgeliefert werden. Durch den Endpunkt "generate" (Beispiel: /boundariesosmkoeln/service/generate) wird die Erstellung des Polygons gegen die Datenbank in jedem Fall ausgeführt. Mit Übergabeparametern können spezielle Polygon berechnet werden (Beispiel: /boundariesosmkoeln/service/generate?level=stadtteile&threshold=250). Das Ergebnis dieser Berechnung wird im Filesystem abgelegt. Der Ort dafür wird in der applicatin.properties for Start des Servers eingetragen und als Ergebnis des Service zurückgegeben.
 
-Bereits berechnet Daten sind in diesem Projekt auf github hinterlegt und können so direkt verwendet werden.
+Bereits berechnet Daten sind in diesem Projekt auf github hinterlegt und können so direkt verwendet werden: https://github.com/weberius/boundariesosmkoeln/tree/master/src/main/resources
