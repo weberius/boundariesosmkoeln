@@ -31,7 +31,7 @@ Um dies zu verhindern, wird die Anfrage in Anlehnung an [An example showing how 
 
 Der Service benötigt ggf. eine postgresql-Datenbank. Die Verbindung wird über jndi im Tomcat definiert. Hierfür ist folgender Eintrag in der context.xml des Tomcat notwendig:
 
-&gt;Resource 
+&lt;Resource 
 	name="jdbc/postgresql" 
 	auth="Container" 
 	type="javax.sql.DataSource"
@@ -41,7 +41,7 @@ Der Service benötigt ggf. eine postgresql-Datenbank. Die Verbindung wird über 
 	url="jdbc:postgresql://server:5432/dbname" 
 	maxTotal="25" 
 	maxIdle="10"
-	validationQuery="select 1" /&lt;
+	validationQuery="select 1" /&gt;
 
 ## DB-Abfragen
 
